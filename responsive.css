@@ -1,7 +1,6 @@
 /* for side nav bar */
-@media (min-width:300px)and (max-width: 450px)  and 
-(-webkit-max-device-pixel-ratio: 4) {
-    .navbar{
+@media (min-width:300px)and (max-width: 450px) and (-webkit-max-device-pixel-ratio: 4) {
+    .navbar {
         position: fixed;
         bottom: 0;
         width: 100%;
@@ -12,75 +11,87 @@
         padding-right: 0px;
         padding-bottom: 10px;
     }
-    .nav{
+
+    .nav {
         display: flex;
         align-items: start;
         flex-direction: row;
         width: 100vw;
     }
-    .logo img{
+
+    .logo img {
         display: none;
     }
-    .nav1{
+
+    .nav1 {
         display: flex;
-        justify-content:space-between;
+        justify-content: space-between;
         align-items: center;
         flex-direction: row;
         width: 60vw;
         height: 4vh;
         padding-left: 15px;
     }
-    .nav2{
+
+    .nav2 {
         display: flex;
-        justify-content:space-between;
+        justify-content: space-between;
         align-items: center;
         flex-direction: row;
         margin-top: 0;
         margin-left: 60px;
         height: 4vh;
     }
-    .nav1 span, .nav2 span{
+
+    .nav1 span,
+    .nav2 span {
         display: none;
     }
+
     .playlistbtn {
         display: none;
     }
 }
 
 /* for top nav bar */
-@media (min-width:300px)and (max-width: 450px)  and 
-(-webkit-max-device-pixel-ratio: 4){
-    .banner{
+@media (min-width:300px)and (max-width: 450px) and (-webkit-max-device-pixel-ratio: 4) {
+    .banner {
         width: 100vw;
         scroll-behavior: smooth;
         height: 5vh;
     }
-    .heading{
+
+    .heading {
         width: 100vw;
     }
-    .slider{
+
+    .slider {
         overflow: hidden;
         height: fit-content;
         width: 100vw;
         margin-left: 10px;
         margin-right: 10px;
     }
-    .card{
+
+    .card {
         overflow: auto;
         width: 95vw;
         align-items: flex-start;
         justify-content: flex-start;
     }
-    body{
+
+    body {
         width: 100vw;
     }
-    main{
+
+    main {
         width: 100vw;
         height: 95.6vh;
     }
-    .home{
+
+    .home {
         overflow: auto;
-height: 85vh;
-width: 100vw;
+        height: 85vh;
+        width: 100vw;
     }
 }
