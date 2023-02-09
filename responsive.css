@@ -28,6 +28,7 @@
         flex-direction: row;
         width: 60vw;
         height: 4vh;
+        padding-left: 15px;
     }
     .nav2{
         display: flex;
@@ -52,6 +53,7 @@
     .banner{
         width: 100vw;
         scroll-behavior: smooth;
+        height: 5vh;
     }
     .heading{
         width: 100vw;
@@ -74,6 +76,11 @@
     }
     main{
         width: 100vw;
-        height: 100vh;
+        height: 95.6vh;
+    }
+    .home{
+        overflow: auto;
+height: 85vh;
+width: 100vw;
     }
 }
