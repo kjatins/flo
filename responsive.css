@@ -1,0 +1,79 @@
+/* for side nav bar */
+@media (min-width:300px)and (max-width: 450px)  and 
+(-webkit-max-device-pixel-ratio: 4) {
+    .navbar{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 4vh;
+        z-index: 4;
+        padding-top: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+    }
+    .nav{
+        display: flex;
+        align-items: start;
+        flex-direction: row;
+        width: 100vw;
+    }
+    .logo img{
+        display: none;
+    }
+    .nav1{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 60vw;
+        height: 4vh;
+    }
+    .nav2{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 0;
+        margin-left: 60px;
+        height: 4vh;
+    }
+    .nav1 span, .nav2 span{
+        display: none;
+    }
+    .playlistbtn {
+        display: none;
+    }
+}
+
+/* for top nav bar */
+@media (min-width:300px)and (max-width: 450px)  and 
+(-webkit-max-device-pixel-ratio: 4){
+    .banner{
+        width: 100vw;
+        scroll-behavior: smooth;
+    }
+    .heading{
+        width: 100vw;
+    }
+    .slider{
+        overflow: hidden;
+        height: fit-content;
+        width: 100vw;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .card{
+        overflow: auto;
+        width: 95vw;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    body{
+        width: 100vw;
+    }
+    main{
+        width: 100vw;
+        height: 100vh;
+    }
+}
