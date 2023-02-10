@@ -55,6 +55,13 @@
 
 /* for top nav bar */
 @media (min-width:300px)and (max-width: 450px) and (-webkit-max-device-pixel-ratio: 4) {
+    
+    html{
+        height: -webkit-fill-available;
+    }
+    body{
+        height: -webkit-fill-available;
+    }
     .banner {
         width: 100vw;
         scroll-behavior: smooth;
