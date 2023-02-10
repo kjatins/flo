@@ -282,5 +282,5 @@ main {
 }
 
 .active {
-    filter: invert(100%) drop-shadow(0px 0px 4px #44d);
+    filter: invert(100%) drop-shadow(0px 0px 20px #44d);
 }

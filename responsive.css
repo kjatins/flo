@@ -121,7 +121,10 @@
         height: 85vh;
         width: 100vw;
     }
-
+    .container{
+        height: 30vh;
+        width: 46vw;
+    }
     .container img {
         height: 21vh;
         margin: 15px;
