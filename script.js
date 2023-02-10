@@ -3,5 +3,5 @@ setTimeout(() => {
   
     // 👇️ hides element (still takes up space on the page)
     welcome.style.display = 'none';
-  }, 8000);
+  }, 7000);
   
