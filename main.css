@@ -21,8 +21,79 @@ body {
     src: url("fonts/VarelaRound-Regular.ttf") format("truetype");
 }
 
+.welcome {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background: #2f1c1c;
+    transition: ease-in-out 6.25s;
+    animation: fadeout duration timing-function delay iteration-count direction fill-mode;
+}
+
+.welcome {
+    animation: fadeOut ease 8s;
+    -webkit-animation: fadeOut ease 8s;
+    -moz-animation: fadeOut ease 8s;
+    -o-animation: fadeOut ease 8s;
+    -ms-animation: fadeOut ease 8s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 .navbar {
-    background: #7b4646;
+    background: #553131;
     display: flex;
     padding: 20px 20px;
     height: 100vh;
@@ -34,10 +105,10 @@ body {
 
 .nav {
     font-family: arialRound;
-    
+
 }
 
-#im1 {
+.im1 {
     filter: invert(100%);
     height: 30px;
     padding-right: 10px;
@@ -157,7 +228,7 @@ main {
 }
 
 
-#play{
+#play {
     transition: ease-in-out .45s;
     opacity: 0;
     position: absolute;
@@ -171,6 +242,7 @@ main {
     padding-left: 69%;
     content: url('play_circle_FILL1_wght400_GRAD0_opsz48.png');
 }
+
 .container:hover #play {
     opacity: 1;
 }
@@ -195,14 +267,20 @@ main {
     align-items: center;
     margin: 20px 0 10px 0;
     padding: 0px 0px 0px 0px;
+    color: white;
 }
 
 .heading ul li {
     list-style: none;
     display: contents;
     list-style: none;
+    text-shadow: #353535 1px 2px 4px;
 }
 
 .heading h2 {
     margin: 0px 25px 0px 25px;
+}
+
+.active {
+    filter: invert(100%) drop-shadow(0px 0px 4px #44d);
 }
