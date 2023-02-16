@@ -9,6 +9,8 @@ body {
     background-image: url("vista_wallpapers\ \(1\).jpg");
     background-size: cover;
     backdrop-filter: blur(40px);
+    height: 100vh;
+    width: 100vw;
 }
 
 @font-face {
@@ -30,11 +32,6 @@ body {
     align-items: center;
     z-index: 10;
     background: #2f1c1c;
-    transition: ease-in-out 6.25s;
-    animation: fadeout duration timing-function delay iteration-count direction fill-mode;
-}
-
-.welcome {
     animation: fadeOut ease 8s;
     -webkit-animation: fadeOut ease 8s;
     -moz-animation: fadeOut ease 8s;
@@ -101,6 +98,8 @@ body {
     box-shadow: 0 2px 4px -1px rgb(6, 253, 183);
     padding-right: 33px;
     color: white;
+    top: 0;
+    bottom: 0;
 }
 
 .nav {
@@ -193,6 +192,7 @@ main {
     display: flex;
     flex-direction: column;
     font-family: arialRound;
+    overflow-y: scroll;
 }
 
 .card {
@@ -228,7 +228,7 @@ main {
 }
 
 
-#play {
+.playbtn {
     transition: ease-in-out .45s;
     opacity: 0;
     position: absolute;
@@ -241,9 +241,11 @@ main {
     filter: invert(1);
     padding-left: 69%;
     content: url('play_circle_FILL1_wght400_GRAD0_opsz48.png');
+    box-shadow: 0px 0px 0px 0px #ffffff00;
+    cursor: pointer;
 }
 
-.container:hover #play {
+.container:hover .playbtn {
     opacity: 1;
 }
 
@@ -284,3 +286,5 @@ main {
 .active {
     filter: invert(100%) drop-shadow(0px 0px 20px #44d);
 }
+
+

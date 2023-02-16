@@ -1,17 +1,20 @@
 /* for side nav bar */
 @media (min-width:300px)and (max-width: 450px) and (-webkit-max-device-pixel-ratio: 4) {
-    .welcome{
+    .welcome {
         height: 95.5vh;
     }
-    .welcome img{
+
+    .welcome img {
         height: 20vh;
     }
+
     .navbar {
         position: fixed;
         bottom: 0;
         width: 100%;
         height: 4vh;
         z-index: 4;
+        top: auto;
         padding-top: 10px;
         padding-left: 0px;
         padding-right: 0px;
@@ -71,6 +74,8 @@
 
     body {
         height: -webkit-fill-available;
+        height: auto;
+        overflow: hidden;
     }
 
     .banner {
@@ -121,12 +126,125 @@
         height: 85vh;
         width: 100vw;
     }
-    .container{
+
+    .container {
         height: 30vh;
         width: 50vw;
     }
+
     .container img {
         height: 17vh;
         margin: 15px;
+    }
+
+    /* .playbtn {
+        margin-bottom: 40%;
+        margin-right: 37%;
+        margin-left: 40%;
+        margin-top: 50%;
+        padding: 0;
+    } */
+
+}
+
+@media (min-width:300px)and (max-width: 450px) and (-webkit-max-device-pixel-ratio: 4) {
+    .musicplayer {
+        width: 100vw !important;
+        display: flex;
+        justify-content: center;
+        right: auto !important;
+        bottom: 63px !important;
+        z-index: 5;
+    }
+
+    .mpcard {
+        background-color: rgba(255, 255, 255, 0) !important;
+    }
+
+    .back0,
+    .block {
+        height: 43px !important;
+        width: 370px !important;
+        margin-top: 60px;
+        
+    }
+
+    .back {
+        display: none;
+    }
+
+    .back2,
+    .back3 {
+        top: -20px !important;
+        border-radius: 20px !important;
+    }
+
+    .back3 {
+        width: 26.4rem;
+    }
+
+    .disk {
+        top: -40px !important;
+        width: 68px !important;
+        height: 68px !important
+    }
+
+    .full,
+    .setting {
+        display: none;
+    }
+
+    .album {
+        display: none !important;
+    }
+
+    .text {
+        top: 0 !important;
+        height: 60px !important;
+        font-size: 8px !important;
+    }
+
+    .title {
+        margin-top: -11px;
+        padding-left: 35% !important;
+        width: 165px;
+    }
+
+    .song-name {
+        height: 24px;
+        overflow: hidden;
+        width: 180px;
+    }
+    .artist-name{
+        height: 18px;
+    }
+
+    .bottom {
+        top: 15px !important;
+    }
+
+    .current-time,
+    .song-duration {
+        display: none !important;
+    }
+
+    .player {
+        top: 0px !important;
+        justify-content: space-between !important;
+    }
+
+    .player i {
+        margin: 0px 37px 0px 8px !important;
+    }
+
+    #pre,
+    #next,
+    #addlist {
+        display: none;
+    }
+
+    input[type="range"]::-moz-range-thumb,
+    input[type="range"]::-webkit-slider-thumb {
+        height: 0px !important;
     }
 }

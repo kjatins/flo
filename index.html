@@ -8,6 +8,8 @@
     <title>flo</title>
     <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" href="responsive.css" type="text/css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="icons.css" type="text/css">
 
 </head>
 
@@ -19,12 +21,12 @@
         <div class="nav">
             <ul class="nav1">
                 <li class="logo"><img src="music-logo-png-2342.png"></li>
-                <li><img  class="im1 active" src="home_FILL1_wght600_GRAD0_opsz40.png"><span>Home</span></li>
-                <li><img  class="im1" src="search_FILL1_wght600_GRAD0_opsz40.png"><span>Search</span></li>
-                <li><img  class="im1" src="view_kanban_FILL0_wght700_GRAD0_opsz40.png"><span>Your library</span></li>
+                <li><img class="im1 active" src="home_FILL1_wght600_GRAD0_opsz40.png"><span>Home</span></li>
+                <li><img class="im1" src="search_FILL1_wght600_GRAD0_opsz40.png"><span>Search</span></li>
+                <li><img class="im1" src="view_kanban_FILL0_wght700_GRAD0_opsz40.png"><span>Your library</span></li>
             </ul>
             <ul class="nav2">
-                <li><img class="playlistbtn im1 src="playlist_add_FILL1_wght400_GRAD0_opsz48.png"><span>Create
+                <li><img class="playlistbtn im1 src=" playlist_add_FILL1_wght400_GRAD0_opsz48.png"><span>Create
                         PlayList</span></li>
                 <li><img class="favs im1" src="favorite_FILL1_wght400_GRAD0_opsz48.png"><span>Liked Song</span>
                 </li>
@@ -72,22 +74,22 @@
                     <div class="container">
                         <img id="cardimg" src="songs/img/tere liye.jpg">
                         <p>Tere Liye</p>
-                        <img id="play">
+                        <span class="playbtn" id="1"></span>
                     </div>
                     <div class="container">
                         <img id="cardimg" src="songs/img/pyar karda.jpg">
                         <p>Pyar Karda</p>
-                        <img id="play">
+                        <span class="playbtn" id="5"></span>
                     </div>
                     <div class="container">
                         <img id="cardimg" src="songs/img/tum mile.jpg">
                         <p>Tum Mile</p>
-                        <img id="play">
+                        <span class="playbtn" id="7"></span>
                     </div>
                     <div class="container">
                         <img id="cardimg" src="songs/img/yaar mera.jpg">
                         <p>Yaar Mera</p>
-                        <img id="play">
+                        <span class="playbtn" id="8"></span>
                     </div>
                 </div>
             </div>
@@ -112,29 +114,81 @@
                     <div class="container">
                         <img id="cardimg" src="songs/img/maan mere jaan.jpg">
                         <p>Maan Mere Maan</p>
-                        <img id="play">
+                        <span class="playbtn" id="8"></span>
                     </div>
                     <div class="container">
                         <img id="cardimg" src="songs/img/bandook.jpg">
                         <p>Bandook</p>
-                        <img id="play">
+                        <span class="playbtn" id="3"></span>
                     </div>
                     <div class="container">
                         <img id="cardimg" src="songs/img/idfc.jpg">
                         <p>idfc</p>
-                        <img id="play">
+                        <span class="playbtn" id="2"></span>
                     </div>
                     <div class="container">
                         <img id="cardimg" src="songs/img/shaamat.jpg">
                         <p>Shaamat</p>
-                        <img id="play">
+                        <span class="playbtn" id="0"></span>
                     </div>
                 </div>
             </div>
 
         </div>
-
     </main>
+    
+    
+    <script src="music player/data.js"></script>
+    <audio src="" id="audio"></audio>
+    <div class="masterplayer">
+        <div class="musicplayer">
+            <div class="mpcard">
+                <div class="back0">
+                    <div class="back"></div>
+                    <div class="back1"></div>
+                    <div class="back2"></div>
+                    <div class="back3"></div>
+                </div>
+                <div class="block">
+                    <div class="full">
+                        <img src="arrow_back_ios_FILL1_wght400_GRAD0_opsz48.png" alt="">
+                    </div>
+                    <div class="setting">
+                        <img src="icons/settings.png" alt="">
+                    </div>
+                    <div class="songp">
+                        <img class="disk " alt="">
+                    </div>
+                    <div class="text">
+                        <div class="album">
+                            <a href="">
+                                <h3>Album Lofi</h3>
+                                <img src="arrow_back_ios_FILL1_wght400_GRAD0_opsz48.png" height="25px" alt="">
+                            </a>
+                        </div>
+                        <div class="title">
+                                <h1 id="song-name"class="song-name">song one</h1>
+                            <h2 class="artist-name">artist</h2>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <input type="range" class="seek-bar" id="progressbar" min="0" value="0" max="100">
+                        <span class="current-time">00:00</span>
+                        <span class="song-duration">00:00</span>
+                    </div>
+                    <div class="player">
+                        <i class="fav" id="fav"></i>
+                        <i class="pre" id="pre"></i>
+                        <i class="masterplay" id="play"></i>
+                        <i class="next" id="next"></i>
+                        <i class="addlist" id="addlist"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    
+    <script src="music player/app.js"></script>
     <script src="script.js"></script>
 </body>
 
