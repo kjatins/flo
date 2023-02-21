@@ -52,11 +52,11 @@ back.addEventListener('click', () => {
 })
 
 next.addEventListener('click', () => {
-    if (index>=14) {
+    if (index >= 14) {
         index = 0;
     }
     else {
-        index+=1;
+        index += 1;
     }
     music.src = `songs/music/${index + 1}.mp3`;
     songname.innerHTML = songs[index].name;
@@ -72,7 +72,7 @@ next.addEventListener('click', () => {
 
 Array.from(document.getElementsByClassName('playbtn')).forEach((element) => {
     element.addEventListener('click', (e) => {
-        musicplayer.style.display="contents";
+        musicplayer.style.display = "contents";
         index = parseInt(e.target.id);
         music.src = `songs/music/${index + 1}.mp3`;
         songname.innerHTML = songs[index].name;
@@ -120,3 +120,32 @@ music.addEventListener('timeupdate', () => {
 progressbar.addEventListener('change', () => {
     music.currentTime = progressbar.value;
 })
+
+
+
+
+
+// function funcall() {
+//     let albumlofi = songs.filter(b => b.album == 'lofi');
+//     let list = "<table border='1|1'>"
+//     console.table(albumlofi)
+//     setTimeout(() => {
+//         list += '<thead>'
+//         list += '<tr>';
+//         list += '<td>'+"Title"+'</td>';
+//         list += '<td>'+"Artist"+'</td>';
+//         list += '<td>'+"cover"+'</td>';
+//         list += '</tr>';
+//         list += '</thead>';
+//         for (var i = 0; i < albumlofi.length; i++) {
+//             list += '<tr>';
+//             list += '<td>'+albumlofi[i].name+'</td>';
+//             list += '<td>'+albumlofi[i].artist+'</td>';
+//             list += '<td>'+albumlofi[i].cover+'</td>';
+//             list += '</tr>';
+//         }
+         
+//         document.getElementById('lofipl').innerHTML = list;
+//     },500);
+// }
+// funcall();

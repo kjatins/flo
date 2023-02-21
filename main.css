@@ -17,6 +17,10 @@ body {
     font-family: arialRound;
     src: url("fonts/ARLRDBD.TTF") format("truetype");
 }
+@font-face {
+    font-family: Rubik;
+    src: url("fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+}
 
 @font-face {
     font-family: verela;
@@ -287,4 +291,61 @@ main {
     filter: invert(100%) drop-shadow(0px 0px 20px #44d);
 }
 
+.lofipl{
+    width: 86vw;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+table{
+    background: #ffffff8a;
+    border-radius: 30px;
+    padding: 20px 50px;
+    margin-top: -150px;
+    font-family: Rubik;
+}
 
+td{
+    padding: 20px;
+}
+td img{
+    height: 4rem;
+    border-radius: 5rem;
+    box-shadow:  0px 3px 15px -3px black;
+}
+.plistbtn{
+    height: 2rem;
+    content: url('icons/play.png');
+}
+#show{
+    cursor: pointer;
+}
+.lofiback{
+    background-image: url('/diane-picchiottino-v8BgAb9EaE8-unsplash.jpg');
+    height: 55vh;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 50px 200px 150px #175a62, inset 0px -50px 70px #175a62;
+    font-family: Rubik;
+    padding: 0px 70px;
+}
+.lofiback h1{
+    padding-top: 20px;
+    font-size: 45px;
+    color: whitesmoke;
+    text-shadow: 1px 4px 5px #201717;;
+}
+.lofiback h2{
+    font-weight: 300;
+    font-size: 20px;
+    color: #e8e8e8;
+    padding-top: 20px;
+    text-shadow: 1px 4px 5px #201717;;
+}
+#tname{
+    font-weight: bold;
+width: 30vw;
+display: inline-block;
+}
