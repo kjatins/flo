@@ -10,3 +10,8 @@ setTimeout(() => {
     document.querySelector(".home").style.display = "none";
     document.querySelector(".lofipl").style.display = "flex";
   })
+  let goback = document.getElementById('goback');
+  goback.addEventListener('click',()=>{
+    document.querySelector(".lofipl").style.display = "none";
+    document.querySelector(".home").style.display = "flex";
+  })
