@@ -69,9 +69,36 @@ next.addEventListener('click', () => {
 })
 
 ///
+const allPlays = ()=>{
+    Array.from(document.getElementsByClassName('cardplay')).forEach((element)=>{
+        element.classList.remove('pause');
+        element.classList.add('plistbtn');
+    })
+}
+// const plist=()=>{
+//     Array.from(document.getElementsByClassName("card"))
+// }
+Array.from(document.getElementsByClassName('cardplay')).forEach((element) => {
+    element.addEventListener('click', (e) => {
+        allPlays();
+        musicplayer.style.display = "contents";
+        index = parseInt(e.target.id);
+        e.target.classList.remove('plistbtn');
+        e.target.classList.add('pause');
+        music.src = `songs/music/${index + 1}.mp3`;
+        songname.innerHTML = songs[index].name;
+        artistname.innerHTML = songs[index].artist;
+        disk.style.backgroundImage = `url('${songs[index].cover}')`;
+        backimg.style.backgroundImage = `url('${songs[index].cover}')`;
+        music.currentTime = 0;
+        music.play();
+        playbtn.click(true)
+    })
+})
 
 Array.from(document.getElementsByClassName('playbtn')).forEach((element) => {
     element.addEventListener('click', (e) => {
+        allPlays();
         musicplayer.style.display = "contents";
         index = parseInt(e.target.id);
         music.src = `songs/music/${index + 1}.mp3`;

@@ -69,11 +69,11 @@
 @media (min-width:300px)and (max-width: 450px) and (-webkit-max-device-pixel-ratio: 4) {
 
     html {
-        height: -webkit-fill-available;
+        /* height: -webkit-fill-available; */
     }
 
     body {
-        height: -webkit-fill-available;
+        height: 100%;
         height: auto;
         overflow: hidden;
     }

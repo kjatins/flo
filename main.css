@@ -317,7 +317,7 @@ td img{
 }
 .plistbtn{
     height: 2rem;
-    content: url('icons/play.png');
+    content: url('play_circle_FILL1_wght400_GRAD0_opsz48.png');
 }
 #show{
     cursor: pointer;
@@ -348,4 +348,7 @@ td img{
     font-weight: bold;
 width: 30vw;
 display: inline-block;
+}
+.cardplay{
+    height: 32px;
 }
