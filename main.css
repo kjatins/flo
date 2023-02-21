@@ -323,7 +323,7 @@ td img{
     cursor: pointer;
 }
 .lofiback{
-    background-image: url('/diane-picchiottino-v8BgAb9EaE8-unsplash.jpg');
+    background-image: url('diane-picchiottino-v8BgAb9EaE8-unsplash.jpg');
     height: 55vh;
     background-size: cover;
     background-position: center;
