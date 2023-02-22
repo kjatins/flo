@@ -254,6 +254,8 @@
     table{
         width: 40% !important;
         padding: 15px 10px !important;
+        margin-top: -19rem;
+        margin-bottom: 10rem;
     }
     .lofiback{
         padding: 0px 25px !important;
