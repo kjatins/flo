@@ -69,12 +69,12 @@
 @media (min-width:300px)and (max-width: 450px) and (-webkit-max-device-pixel-ratio: 4) {
 
     html {
-        min-height: -webkit-fill-available;
+        height: -webkit-fill-available;
     }
 
     body {
-        min-height: -webkit-fill-available;
-        min-height: 100vh;
+        height: -webkit-fill-available;
+        height: auto;
         overflow: hidden;
     }
 
@@ -118,9 +118,7 @@
 
     main {
         width: 100vw;
-        min-height: -webkit-fill-available;
-        /* height: 93.6vh; */
-        min-height: 100vh;
+        height: 93.6vh;
     }
 
     .home {
@@ -248,5 +246,23 @@
     input[type="range"]::-moz-range-thumb,
     input[type="range"]::-webkit-slider-thumb {
         height: 0px !important;
+    }
+
+    .lofipl{
+        width:100vw;
+    }
+    table{
+        width: 40% !important;
+        padding: 15px 10px !important;
+    }
+    .lofiback{
+        padding: 0px 25px !important;
+
+    }
+    .lofiback h1{
+        font-size: 35px;
+    }
+    .lofiback h2{
+        font-size: 15px;
     }
 }
