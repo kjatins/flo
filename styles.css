@@ -160,6 +160,7 @@ input[type="range"] {
 
 }
 
+
 /* chrome and safari targets */
 input[type="range"]::-webkit-slider-runnable-track {
     background: rgb(95, 95, 95);
@@ -169,6 +170,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
     appearance: none;
     margin-top: -12px;
     background-color: red;
