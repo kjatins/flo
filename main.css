@@ -433,7 +433,7 @@ table#table2{
 #table2 .plistbtn{
     height: 2rem;
     filter: invert(1);
-    content: url('/play_circle_FILL1_wght400_GRAD0_opsz48.png');
+    content: url('play_circle_FILL1_wght400_GRAD0_opsz48.png');
 }
 #table2 #nw{
     filter: invert(1);
