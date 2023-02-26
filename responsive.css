@@ -55,12 +55,7 @@
         height: 4vh;
     }
 
-    .nav1 span,
-    .nav2 span {
-        display: none;
-    }
-
-    .playlistbtn {
+    #headname {
         display: none;
     }
 }
@@ -159,6 +154,7 @@
 
     .mpcard {
         background-color: rgba(255, 255, 255, 0) !important;
+        box-shadow: 0px 0px 0px 0px rgb(255, 228, 228) !important;
     }
 
     .back0,
@@ -166,7 +162,7 @@
         height: 43px !important;
         width: 370px !important;
         margin-top: 60px;
-        
+
     }
 
     .back {
@@ -215,7 +211,8 @@
         overflow: hidden;
         width: 180px;
     }
-    .artist-name{
+
+    .artist-name {
         height: 18px;
     }
 
@@ -242,30 +239,78 @@
     #addlist {
         display: none;
     }
-    input[type="range"]::-webkit-slider-thumb{
+
+    input[type="range"]::-webkit-slider-thumb {
         background-color: rgba(255, 0, 0, 0.829) !important;
     }
+
     input[type="range"]::-moz-range-thumb {
         background-color: rgba(255, 0, 0, 0) !important;
     }
 
-    .lofipl{
-        width:100vw;
+    .lofipl {
+        width: 100vw;
     }
-    table{
+
+    table.table1 {
         width: 40% !important;
         padding: 15px 10px !important;
         margin-top: -19rem;
         margin-bottom: 10rem;
     }
-    .lofiback{
+
+    .lofiback {
         padding: 0px 25px !important;
 
     }
-    .lofiback h1{
+
+    .lofiback h1 {
         font-size: 35px;
     }
-    .lofiback h2{
+
+    .lofiback h2 {
         font-size: 15px;
+    }
+
+
+
+    .searchbox {
+        width: 100vw !important;
+        overflow-y: scroll;
+    }
+
+    #table2 {
+        width: 85vw !important;
+        padding: 20px 25px !important;
+        font-size: 15px;
+        margin-bottom: 15rem;
+        margin-top: 5rem !important;
+    }
+
+    #table2 td img {
+        height: 2.5rem;
+    }
+
+    #table2 .plistbtn {
+        height: 1.5rem !important;
+    }
+
+    .goback1 {
+        top: 20px !important;
+        position: fixed;
+    }
+
+    #myInput {
+        width: 66vw;
+        right: 0;
+        position: fixed;
+        margin-top: 26px;
+    }
+    #table2 .pause{
+        height: 1.5rem !important;
+    }
+    #yourlist,
+    #likedsong{
+        display: none;
     }
 }

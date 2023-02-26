@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+input{
+    width: 35vw;
+    height: 20px;
+    margin: 30px;
+}
+table{
+    background: #241818;
+    border-radius: 30px;
+    padding: 20px 50px;
+    margin-top: 0px;
+    font-family: Rubik;
+    display: none;
+    width: 33rem
+}
+tbody{
+
+    border-collapse: collapse;
+}
+tr{
+    box-shadow:  0px 3px 20px -10px black;
+    border-radius: 15px;
+}
+td{
+    padding: 20px;
+}
+td img{
+    height: 3.5rem;
+    border-radius: 5px;
+}
+.plistbtn{
+    height: 2rem;
+    filter: invert(1);
+    content: url('/play_circle_FILL1_wght400_GRAD0_opsz48.png');
+}
+#nw{
+    filter: invert(1);
+}

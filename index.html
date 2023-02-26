@@ -21,15 +21,16 @@
         <div class="nav">
             <ul class="nav1">
                 <li class="logo"><img src="music-logo-png-2342.png"></li>
-                <li><img class="im1 active" src="home_FILL1_wght600_GRAD0_opsz40.png"><span>Home</span></li>
-                <li><img class="im1" src="search_FILL1_wght600_GRAD0_opsz40.png"><span>Search</span></li>
-                <li><img class="im1" src="view_kanban_FILL0_wght700_GRAD0_opsz40.png"><span>Your library</span></li>
+                <li><span id="hometab"><img class="im1 active" src="home_FILL1_wght600_GRAD0_opsz40.png"><span
+                            id="headname">Home</span></span></li>
+                <li><span id="search"><img class="im1" src="search_FILL1_wght600_GRAD0_opsz40.png"><span
+                            id="headname">Search</span></span></li>
+                <li><span id="libtab"><img class="im1" src="view_kanban_FILL0_wght700_GRAD0_opsz40.png"><span
+                            id="headname">Your library</span></span></li>
             </ul>
             <ul class="nav2">
-                <li><img class="playlistbtn im1 src=" playlist_add_FILL1_wght400_GRAD0_opsz48.png"><span>Create
-                        PlayList</span></li>
-                <li><img class="favs im1" src="favorite_FILL1_wght400_GRAD0_opsz48.png"><span>Liked Song</span>
-                </li>
+                <li><span id="yourlist"><img class="playlistbtn im1" src="playlist_add_FILL1_wght400_GRAD0_opsz48.png"><span id="creteplay">CreatePlayList</span></span></li>
+                <li><span id="favsong"><img class="favs im1" src="favorite_FILL1_wght400_GRAD0_opsz48.png"><span id="likedsong">Liked Song</span></span></li>
             </ul>
         </div>
     </div>
@@ -37,7 +38,8 @@
         <div class="banner" id="mybanner">
             <div class="b1">
                 <ul>
-                    <li><img id="goback" src="arrow_back_ios_FILL1_wght400_GRAD0_opsz48.png" height="25px" alt="Go back"></li>
+                    <li><img id="goback" src="arrow_back_ios_FILL1_wght400_GRAD0_opsz48.png" height="25px"
+                            alt="Go back"></li>
                     <li><img src="arrow_forward_ios_FILL1_wght400_GRAD0_opsz48.png" height="25px" alt="Go Forword"></li>
                 </ul>
             </div>
@@ -137,16 +139,17 @@
         <div class="lofipl">
             <div class="lofilist">
                 <div class="lofiback">
-                <h1>Lofi</h1>
-                <h2>Escape into a World of Hazy Melodies and Nostalgic Vibes With our Latest lofi Album. Immerse
-                    Yourself In Dreamy Beats and Soulful Samples, Perfect for Studying, Chilling, or Simply Drifting
-                    Away.</h2>
+                    <h1>Lofi</h1>
+                    <h2>Escape into a World of Hazy Melodies and Nostalgic Vibes With our Latest lofi Album. Immerse
+                        Yourself In Dreamy Beats and Soulful Samples, Perfect for Studying, Chilling, or Simply Drifting
+                        Away.</h2>
                 </div>
             </div>
-            <table>
+            <table class="table1">
                 <tr>
                     <td><img src="songs/img/tere liye.jpg" alt=""></td>
-                    <td><span id="tname">Tere Liye (Lofi Mix)</span><br><span id="nartist">Aslam, Shreya Ghoshal</span></td>
+                    <td><span id="tname">Tere Liye (Lofi Mix)</span><br><span id="nartist">Aslam, Shreya Ghoshal</span>
+                    </td>
                     <td><span class="cardplay plistbtn" id="1"></span></td>
                 </tr>
                 <tr>
@@ -166,17 +169,20 @@
                 </tr>
                 <tr>
                     <td><img src="songs/img/tum mile.jpg" alt=""></td>
-                    <td><span id="tname">Tum Mile - Lofi Flip</span><br><span id="nartist">Javed Ali, Jay Kava</span></td>
+                    <td><span id="tname">Tum Mile - Lofi Flip</span><br><span id="nartist">Javed Ali, Jay Kava</span>
+                    </td>
                     <td><span class="cardplay plistbtn" id="7"></span></td>
                 </tr>
                 <tr>
                     <td><img src="songs/img/Kali Kali Zulfon Ke (Lo-Fi).jpg" alt=""></td>
-                    <td><span id="tname">Kali Kali Zulfon Ke (Lo-Fi)</span><br><span id="nartist">Madhur Sharma</span></td>
+                    <td><span id="tname">Kali Kali Zulfon Ke (Lo-Fi)</span><br><span id="nartist">Madhur Sharma</span>
+                    </td>
                     <td><span class="cardplay plistbtn" id="9"></span></td>
                 </tr>
                 <tr>
                     <td><img src="songs/img/Ik Vaari Aa Lofi Mix.jpg" alt=""></td>
-                    <td><span id="tname">Ik Vaari Aa Lofi Mix</span><br><span id="nartist">Pritam, Arijit Singh, DJ Yogii</span></td>
+                    <td><span id="tname">Ik Vaari Aa Lofi Mix</span><br><span id="nartist">Pritam, Arijit Singh, DJ
+                            Yogii</span></td>
                     <td><span class="cardplay plistbtn" id="11"></span></td>
                 </tr>
                 <tr>
@@ -185,8 +191,97 @@
                     <td><span class="cardplay plistbtn" id="14"></span></td>
                 </tr>
             </table>
-        </div>
 
+        </div>
+        <div class="searchbox">
+            <div class="goback1" id="masterback"><img src="search/arrow_back_ios_FILL1_wght400_GRAD0_opsz48.png"
+                    height="25px" alt=""></div>
+            <input type="text" name="" id="myInput" placeholder="song names..." onkeyup="searchFun()"
+                oninput="showsong()">
+            <table id="table2">
+                <tr>
+                    <th style="width : 200px"></th>
+                    <th style="width : 60%"></th>
+                    <th style="width : 200px"></th>
+                </tr>
+                <tr>
+                    <td><img src="/songs/img/Shaamat.jpg" alt=""></td>
+                    <td><span id="nw">Shaamat</span></td>
+                    <td><span class="cardplay plistbtn" id="0"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="/songs/img/tere liye.jpg" alt=""></td>
+                    <td><span id="nw">Tere Liye (Lofi Mix)</span></td>
+                    <td><span class="cardplay plistbtn" id="1"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="/songs/img/idfc.jpg" alt=""></td>
+                    <td><span id="nw">idfc</span></td>
+                    <td><span class="cardplay plistbtn" id="2"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="/songs/img/bandook.jpg" alt=""></td>
+                    <td><span id="nw">Bandook</span></td>
+                    <td><span class="cardplay plistbtn" id="3"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="/songs/img/naah lofi.jpg" alt=""></td>
+                    <td><span id="nw">Naah Lofi</span></td>
+                    <td><span class="cardplay plistbtn" id="4"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="/songs/img/pyar karda.jpg" alt=""></td>
+                    <td><span id="nw">Pyar Karda Slowed + Reverb</span></td>
+                    <td><span class="cardplay plistbtn" id="5"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="/songs/img/yaar mera.jpg" alt=""></td>
+                    <td><span id="nw">Yaar Mera Lofi</span></td>
+                    <td><span class="cardplay plistbtn" id="6"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="/songs/img/tum mile.jpg" alt=""></td>
+                    <td><span id="nw">Tum Mile - Lofi Flip</span></td>
+                    <td><span class="cardplay plistbtn" id="7"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="/songs/img/maan mere jaan.jpg" alt=""></td>
+                    <td><span id="nw">Maan Meri Jaan</span></td>
+                    <td><span class="cardplay plistbtn" id="8"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="/songs/img/Kali Kali Zulfon Ke (Lo-Fi).jpg" alt=""></td>
+                    <td><span id="nw">Kali Kali Zulfon Ke (Lo-Fi)</span></td>
+                    <td><span class="cardplay plistbtn" id="9"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="/songs/img/Bandook Ma Goli.jpg" alt=""></td>
+                    <td><span id="nw">Bandook Ma Goli</span></td>
+                    <td><span class="cardplay plistbtn" id="10"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="/songs/img/Ik Vaari Aa Lofi Mix.jpg" alt=""></td>
+                    <td><span id="nw">Ik Vaari Aa Lofi Mix</span></td>
+                    <td><span class="cardplay plistbtn" id="11"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="/songs/img/Ram Siya Ram.jpg" alt=""></td>
+                    <td><span id="nw">Ram Siya Ram</span></td>
+                    <td><span class="cardplay plistbtn" id="12"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="/songs/img/Maine Royaan.jpg" alt=""></td>
+                    <td><span id="nw">Maine Royaan</span></td>
+                    <td><span class="cardplay plistbtn" id="13"></span></td>
+                </tr>
+                <tr>
+                    <td><img src="/songs/img/Saibo - Lofi Flip.jpg" alt=""></td>
+                    <td><span id="nw">Saibo - Lofi Flip</span></td>
+                    <td><span class="cardplay plistbtn" id="14"></span></td>
+                </tr>
+
+            </table>
+        </div>
     </main>
 
     <script src="musicplayer1/data.js"></script>
