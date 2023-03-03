@@ -272,7 +272,7 @@
     }
 
     .lofi,
-    .tranding {
+    .trending {
         height: 11rem;
         width: 18rem;
     }
@@ -287,17 +287,17 @@
         margin-left: -5rem;
     }
 
-    .tranding {
+    .trending {
         margin-right: -5rem;
     }
 
     .lofi h4,
-    .tranding h4 {
+    .trending h4 {
         font-size: 2.3rem;
     }
 
     .lofiimg,
-    .trandingimg {
+    .trendingimg {
         height: 8.5rem;
         width: 9.5rem;
     }
