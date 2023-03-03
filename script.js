@@ -8,39 +8,34 @@ setTimeout(() => {
 let home = document.getElementById('hometab');
 home.addEventListener('click', () => {
   document.querySelector(".home").style.display = "";
-  document.querySelector("#mybanner").style.display = "";
-  document.querySelector(".searchbox").style.display = "none";
-})
-
-let showlist = document.getElementById('show');
-showlist.addEventListener('click', () => {
-  document.querySelector(".home").style.display = "none";
-  document.querySelector(".lofipl").style.display = "flex";
-})
-let goback = document.getElementById('goback');
-goback.addEventListener('click', () => {
-  document.querySelector(".home").style.display = "";
-  document.querySelector(".lofipl").style.display = "none";
-})
-
-let search = document.getElementById('search');
-search.addEventListener('click', () => {
-  document.querySelector(".home").style.display = "none";
-  document.querySelector(".searchbox").style.display = "flex";
-  document.querySelector("#mybanner").style.display = "none";
+  // document.querySelector(".searchbox").style.display = "none";
 })
 
 let masterback = document.getElementById('masterback');
 masterback.addEventListener('click', () => {
   document.querySelector(".home").style.display = "";
-  document.querySelector(".searchbox").style.display = "none";
-  document.querySelector("#mybanner").style.display = "";
+  document.querySelector(".container1").style.display = "";
+  document.querySelector('#masterback').style.display = "none";
+  document.querySelector(".lofipl").style.display = "none";
+
+})
+let showlofi = document.getElementById('showlofi');
+showlofi.addEventListener('click', () => {
+  document.querySelector(".home").style.display = "none";
+  document.querySelector(".container1").style.display = "none";
+  document.querySelector(".lofipl").style.display = "flex";
+  document.querySelector('#masterback').style.display = "flex";
 })
 
+let searchinput = document.querySelector("#myInput");
+searchinput.addEventListener('input',(e)=>{
+  if(searchinput.value == ""){
+    document.querySelector('#table2').style.display = 'none';
+  }else{
+    document.querySelector('#table2').style.display = 'flex';
+  }
+})
 
-const showsong = ()=>{
-  document.getElementById('table2').style.display="flex";
-}
 
 const searchFun = () => {
   let filter = document.getElementById('myInput').value.toUpperCase();

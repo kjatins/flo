@@ -1,9 +1,3 @@
-.fav {
-    content: url("icons/favorite_FILL1_wght400_GRAD0_opsz48.png");
-    cursor: pointer;
- 
-}
-
 .pre {
     content: url("icons/pre.png");
     cursor: pointer;
@@ -22,9 +16,5 @@
 
 .next {
     content: url("icons/nex.png");
-    cursor: pointer;
-}
-.addlist {
-    content: url("icons/playlist_add_FILL1_wght400_GRAD0_opsz48.png");
     cursor: pointer;
 }

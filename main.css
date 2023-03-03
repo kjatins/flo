@@ -9,15 +9,16 @@ body {
     background-image: url("vista_wallpapers\ \(1\).jpg");
     background-size: cover;
     backdrop-filter: blur(40px);
-    height: 100vh;
     width: 100vw;
-    position: fixed;
+    flex-direction: column;
+
 }
 
 @font-face {
     font-family: arialRound;
     src: url("fonts/ARLRDBD.TTF") format("truetype");
 }
+
 @font-face {
     font-family: Rubik;
     src: url("fonts/Rubik-VariableFont_wght.ttf") format("truetype");
@@ -26,6 +27,11 @@ body {
 @font-face {
     font-family: verela;
     src: url("fonts/VarelaRound-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: patron;
+    src: url("fonts/PatronPersonalUseRegular-ywy4Y.ttf") format("truetype");
 }
 
 .welcome {
@@ -95,265 +101,376 @@ body {
 }
 
 .navbar {
-    background: #553131;
+    background: linear-gradient(to left, #d25d35, #553131);
     display: flex;
-    padding: 20px 20px;
-    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    width: 100vw;
     position: sticky;
-    box-shadow: 0 2px 4px -1px rgb(6, 253, 183);
-    padding-right: 33px;
+    box-shadow: 0 2px 20px -1px rgb(9, 8, 8);
     color: white;
     top: 0;
-    bottom: 0;
+    flex-direction: row;
+    z-index: 9;
 }
-
-.nav {
-    font-family: arialRound;
-
+#hometab{
+    cursor: pointer;
 }
-
 .im1 {
     filter: invert(100%);
     height: 30px;
     padding-right: 10px;
 }
 
-.logo img {
-    height: 80px;
-    margin-bottom: 10px;
+.logo {
+    display: flex;
+    width: fit-content;
+    padding-left: 15px;
 }
 
-.nav ul li {
+.logo img {
+    height: 50px;
+}
+
+.nav1 {
     list-style: none;
     display: flex;
-    margin: 10px 0px 15px 0px;
-    justify-content: left;
     align-items: center;
     font-size: 13px;
+    font-family: arialRound;
+    width: fit-content;
+    padding-right: 15px;
 }
 
-.nav2 {
-    margin-top: 50px;
+#myInput {
+    width: 35vw;
+    height: 16px;
+    margin: 30px;
+    border: none;
+    color: #886d6d;
+    padding-left: 35px;
+    padding-right: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 40px -2px rgb(255, 0, 0);
+    background: #d8f4ff;
+    font-family: verela;
 }
+
+.searchcl {
+    position: relative;
+}
+
+#myInput:focus {
+    color: #ddbaba;
+}
+
+.find {
+    position: absolute;
+    top: 31px;
+    left: 35px;
+    height: 25px;
+    opacity: 50%;
+}
+
 
 main {
     display: flex;
     flex-direction: column;
 }
 
-.banner {
-    background-color: rgb(254, 116, 70);
-    width: 86vw;
-    height: 60px;
+/* slider */
+.container1 {
+    height: fit-content;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: fit-content;
+    display: flex;
+    animation: slide 45s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    33.33% {
+        transform: translateX(-33.33%);
+    }
+
+    66.66% {
+        transform: translateX(-66.66%);
+    }
+}
+
+.sliderimg1,
+.sliderimg2,
+.sliderimg3 {
+    width: 100vw;
+    height: 30rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 5;
-    position: sticky;
-    top: 0;
-}
-
-.b1 {
-    display: inline-block;
-    width: 48%;
-    padding-left: 20px;
-}
-
-.b2 {
-    display: inline-block;
-    width: 50%;
-
-}
-
-.banner ul li {
-    list-style: none;
-    display: contents;
-    list-style: none;
-}
-
-.b2 ul {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.button3 {
-    padding: 8px 10px 8px 10px;
-    background-color: #fefefeb8;
-    border: none;
-    border-radius: 20px;
+    flex-direction: column;
+    text-align: center;
     font-family: verela;
-    font-weight: bold;
-    font-size: 13px;
-    box-shadow: 0px 3px 10px -1px #c19191;
-    margin-right: 20px;
+
 }
 
-.button3 a {
-    text-decoration: none;
-    color: rgb(32, 30, 30);
+.sliderimg1 p,
+.sliderimg2 p,
+.sliderimg3 p {
+    font-size: 40px;
+    color: whitesmoke;
+    margin-right: 35rem;
+
 }
+
+#sliderimg2 {
+    color: red;
+}
+
+#author {
+    font-size: 15px;
+}
+
+.sliderimg1 {
+    background-image: url('1366x483-340227-Digital-Art-Chill-Chilling-Out-Lofi.jpg');
+}
+
+.sliderimg2 {
+    background-image: url('1366x483-342300-Digital-Art-Lofi-Chill-Bedroom-Raccoon.jpg')
+}
+
+.sliderimg3 {
+    background-image: url('1366x483-903110-metalanguage-digital-art-Chill-Out-LoFi-music-guitar.jpg');
+}
+
+/* slider close */
+
 
 .home {
     display: flex;
     flex-direction: column;
-    font-family: arialRound;
+    font-family: Rubik;
     overflow-y: scroll;
-}
-
-.card {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    height: fit-content;
-    margin-top: 20px;
-    margin-bottom: 25px;
-    font-family: verela;
+    height: 27rem;
+    margin: 60px 0px;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    width: 84vw;
+}
+
+.hometext {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: #e3b5b5;
+    text-shadow: 0px 5px 12px #0f0d0d96;
+}
+
+.lofi,
+.tranding {
+    height: 16rem;
+    width: 30rem;
+    overflow: hidden;
     position: relative;
-    width: 230px;
-    margin: 0px 20px;
-    height: 270px;
-    background-color: #eee8e8b3;
-    border-radius: 10px;
-    box-shadow: 4px 5px 16px 0px #71717145;
-}
-
-.container:hover #cardimg {
-    background-color: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(5px);
-    filter: blur(1px);
-    transition: ease-in-out .25s;
-}
-
-
-.playbtn {
-    transition: ease-in-out .45s;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: auto;
-    padding-top: 68%;
-    padding-bottom: 28%;
-    padding-right: 9%;
-    filter: invert(1);
-    padding-left: 69%;
-    content: url('play_circle_FILL1_wght400_GRAD0_opsz48.png');
-    box-shadow: 0px 0px 0px 0px #ffffff00;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px -3px rgb(40, 9, 9);
     cursor: pointer;
 }
-
-.container:hover .playbtn {
-    opacity: 1;
+.lofi:hover,
+.tranding:hover{
+    transform: translateY(-4px);
 }
 
-.container img {
-    height: 70%;
-    width: max-content;
-    border-radius: 7px;
-    box-shadow: 4px 5px 10px 5px #71717145;
+.lofi {
+    background-color: #604054a6;
 }
 
-.container p {
-    text-shadow: 2px 2px #71717145;
+.tranding {
+    background-color: #ff9a31c4;
 }
 
-.heading {
-    float: left;
-    width: 86vw;
-    height: 50px;
+.lofi h4,
+.tranding h4 {
+    font-size: 4rem;
+    margin: 10px 25px;
+    color: #e3b5b5;
+    z-index: 1;
+    position: absolute;
+}
+
+.lofiimg,
+.trandingimg {
+    height: 13.5rem;
+    width: 14.5rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0 10px 0;
-    padding: 0px 0px 0px 0px;
-    color: white;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    position: absolute;
+    right: -1rem;
+    top: 3rem;
+    rotate: 15deg;
 }
 
-.heading ul li {
-    list-style: none;
-    display: contents;
-    list-style: none;
-    text-shadow: #353535 1px 2px 4px;
+.lofiimg {
+    background-image: url("1366x483-342300-Digital-Art-Lofi-Chill-Bedroom-Raccoon.jpg");
+    box-shadow: -10px 10px 51px -2px rgb(34, 34, 34);
 }
 
-.heading h2 {
-    margin: 0px 25px 0px 25px;
+.trandingimg {
+    background-image: url("koukichi-takahashi-fZdX9BW8WDs-unsplash.jpg");
+    box-shadow: -10px 10px 51px -2px rgb(255, 0, 0);
 }
+
+.lofiimg img,
+.trandingimg img {
+    height: 1.5rem;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
 
 .active {
     filter: invert(100%) drop-shadow(0px 0px 20px #44d);
 }
 
-.lofipl{
-    width: 86vw;
+.lofipl {
+    width: 100vw;
     display: none;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
     overflow-y: scroll;
 }
-table.table1{
+
+table.table1 {
     background: #ffffff8a;
     border-radius: 30px;
     padding: 20px 50px;
-    margin-top: -150px;
+    margin-top: 8.5rem;
     font-family: Rubik;
+    position: absolute;
+    top: 0;
+    right: 2rem;
 }
 
-.table1 td{
+.table1 td {
     padding: 20px;
 }
-.table1 td img{
+
+.table1 td img {
     height: 4rem;
     border-radius: 5rem;
-    box-shadow:  0px 3px 15px -3px black;
+    box-shadow: 0px 3px 15px -3px black;
 }
-.table1 .plistbtn{
+
+.table1 .plistbtn {
     height: 2rem;
     content: url('play_circle_FILL1_wght400_GRAD0_opsz48.png');
 }
-#show{
+
+#show {
     cursor: pointer;
 }
-.lofiback{
-    background-image: url('diane-picchiottino-v8BgAb9EaE8-unsplash.jpg');
-    height: 55vh;
+
+.lofilist {
+    font-family: Rubik;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.lofiback {
+    width: 25rem;
+    padding: 40px;
+}
+
+.imgbanner {
+    background-image: url('1366x483-342300-Digital-Art-Lofi-Chill-Bedroom-Raccoon.jpg');
+    height: 22rem;
+    width: 25rem;
     background-size: cover;
     background-position: center;
-    box-shadow: 0px 50px 200px 150px #175a62, inset 0px -50px 70px #175a62;
-    font-family: Rubik;
-    padding: 0px 70px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 10px 47px 23px #ab5a4e;
+    filter: blur(0.5px);
+    margin-top: 3rem;
+    margin-left: 2rem;
+    z-index: -1;
 }
-.lofiback h1{
-    padding-top: 20px;
+
+.imgbanner img {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    height: 4rem;
+
+}
+
+.lofiback h1 {
     font-size: 45px;
-    color: whitesmoke;
-    text-shadow: 1px 4px 5px #201717;;
 }
-.lofiback h2{
+
+.lofiback h1,
+.lofiback h2 {
+    margin-left: 2rem;
+    color: whitesmoke;
+    text-shadow: 1px 4px 5px #201717;
+    padding-top: 20px;
+}
+
+.lofiback h2 {
     font-weight: 300;
     font-size: 20px;
-    color: #e8e8e8;
-    padding-top: 20px;
-    text-shadow: 1px 4px 5px #201717;;
 }
-.table1 #tname{
+
+#lofibackimg {
+    position: absolute;
+    width: 100vw;
+    filter: blur(15px);
+    z-index: -2;
+    box-shadow: 0px 8rem 100rem 22rem #9f5a51;
+}
+
+.songlist {
+    position: absolute;
+    right: 2rem;
+    width: 43.3rem;
+    top: 6.5rem;
+    background: #fe7445;
+    padding: 5px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 23px 13px 4px #fe7445;
+    padding-bottom: 35px;
+}
+
+.table1 #tname {
     font-weight: bold;
-width: 30vw;
-display: inline-block;
+    width: 30vw;
+    display: inline-block;
 }
-.cardplay{
+
+.cardplay {
     height: 32px;
 }
-.searchbox{
+
+.searchbox {
     display: none;
     width: 85.5vw;
     height: 100vh;
@@ -363,78 +480,62 @@ display: inline-block;
     align-items: center;
     flex-direction: column;
 }
-.goback1{
+
+.goback1 {
     height: 40px;
     filter: invert(1);
     width: 40px;
     background-color: #7cb7ce;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 30px;
+    top: 90px;
     left: 30px;
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0px 2px 10px 0px #7cb7ce;
 }
-#hometab,
-#search,
-#libtab{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
 
-#myInput{
-    width: 35vw;
-    height: 16px;
-    margin: 30px;
-    border: none;
-    color: #886d6d;
-    padding: 5px 15px;
-    font-size: 15px;
-border-radius: 15px;
-box-shadow: 0px 5px 40px -2px rgb(255, 0, 0);
-background: #553131;
-font-family: verela;
-}
-#myInput:focus{
-    color: #ddbaba;
-}
-table#table2{
+table#table2 {
     background: #241818;
     border-radius: 30px;
     padding: 20px 50px;
-    margin-top: 0px;
+    margin-top: 10px;
     font-family: Rubik;
     display: none;
-    width: 33rem
+    width: 33rem;
+    position: absolute;
+    right: 2.5rem;
+    color: whitesmoke;
 }
-#table2 tbody{
+
+#table2 tbody {
 
     border-collapse: collapse;
+
 }
-#table2 tr{
-    box-shadow:  0px 3px 20px -10px black;
+
+#table2 tr {
+    box-shadow: 0px 3px 20px -10px black;
     border-radius: 15px;
 }
-#table2 td{
+
+#table2 td {
     padding: 20px;
 }
-#table2 .pause{
+
+#table2 .pause {
     filter: invert(1);
 }
-#table2 td img{
+
+#table2 td img {
     height: 3.5rem;
     border-radius: 5px;
 }
-#table2 .plistbtn{
+
+#table2 .plistbtn {
     height: 2rem;
     filter: invert(1);
     content: url('play_circle_FILL1_wght400_GRAD0_opsz48.png');
-}
-#table2 #nw{
-    filter: invert(1);
 }

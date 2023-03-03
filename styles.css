@@ -4,6 +4,9 @@
 }
 .masterplayer{
     display: none;
+    position: sticky;
+    bottom: 1rem;
+    align-self: flex-end;
 }
 .musicplayer {
     position: absolute;
@@ -27,7 +30,7 @@
     display: flex;
     flex-direction: column;
     height: 250px;
-    width: 400px;
+    width: 330px;
     position: relative;
     border-radius: 20px;
 }
@@ -43,13 +46,13 @@
 
 .back1 {
     height: 125px;
-    background-color: white;
+    background-color: #acffd8;
 }
 
 .back2 {
     height: 50px;
     width: 40px;
-    background-color: white;
+    background-color: #acffd8;
     position: absolute;
     top: 39%;
     border-radius: 50px;
@@ -57,8 +60,8 @@
 
 .back3 {
     height: 50px;
-    width: 262px;
-    background-color: white;
+    width: 200px;
+    background-color: #acffd8;
     position: absolute;
     top: 39%;
     border-radius: 50px;
@@ -75,8 +78,8 @@
 }
 
 .disk {
-    height: 101px;
-    width: 101px;
+    height: 95px;
+    width: 95px;
     position: absolute;
     background-image: url("");
     background-size: cover;
@@ -102,25 +105,8 @@
         transform: rotate(360deg);
     }
 }
-
-.full img {
-    filter: invert(100%);
-    rotate: 90deg;
-    height: 25px;
-    margin-top: 11px;
-    margin-left: 15px;
-}
-
-.setting img {
-    position: absolute;
-    filter: invert(100%);
-    right: 210px;
-    top: 14px;
-    height: 25px;
-}
-
 .player {
-    width: 400px;
+    width: 330px;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -135,9 +121,9 @@
 }
 
 .bottom {
-    width: 340px;
+    width: 260px;
     position: absolute;
-    margin: 5%;
+    margin: 35px;
     display: inline;
     top: 145px;
 }
@@ -214,44 +200,19 @@ input[type="range"]::-moz-range-progress {
 .text {
     display: flex;
     height: 120px;
-    width: 400px;
+    width: 330px;
     flex-direction: column;
     bottom: 0;
     position: absolute;
-    top: 71px;
-    font-size: 10px;
+    top: 7rem;
+    font-size: 9px;
 
-}
-
-.album {
-    display: flex;
-    justify-content: end;
-}
-
-.album a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: rgb(230, 230, 230);
-    margin-right: 15px;
-    padding-bottom: 20px;
-}
-
-.album a h3 {
-    margin-right: 5px;
-}
-
-.album a img {
-    rotate: 180deg;
-    height: 25px;
-    filter: invert(1);
 }
 
 .title {
     display: flex;
     flex-direction: column;
-    padding-left: 48%;
+    padding-left: 45%;
 }
 #song-name{
     -moz-animation: marquee 10s linear infinite;

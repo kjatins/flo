@@ -1,4 +1,3 @@
-/* for side nav bar */
 @media (min-width:300px)and (max-width: 450px) and (-webkit-max-device-pixel-ratio: 4) {
     .welcome {
         height: 95.5vh;
@@ -9,30 +8,12 @@
     }
 
     .navbar {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: 4vh;
+        height: 3rem;
         z-index: 4;
-        top: auto;
-        padding-top: 10px;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-bottom: 10px;
-        border-top-left-radius: 16px;
-        border-top-right-radius: 16px;
-        box-shadow: 0px -10px 26px -2px rgb(51, 175, 236);
-    }
-
-    .nav {
-        display: flex;
-        align-items: start;
-        flex-direction: row;
-        width: 100vw;
     }
 
     .logo img {
-        display: none;
+        height: 35px;
     }
 
     .nav1 {
@@ -45,19 +26,6 @@
         padding-left: 15px;
     }
 
-    .nav2 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        margin-top: 0;
-        margin-left: 60px;
-        height: 4vh;
-    }
-
-    #headname {
-        display: none;
-    }
 }
 
 /* for top nav bar */
@@ -71,84 +39,30 @@
         height: -webkit-fill-available;
         height: auto;
         overflow: hidden;
-    }
-
-    .banner {
         width: 100vw;
-        scroll-behavior: smooth;
-        height: 5vh;
-    }
-
-    .heading {
-        width: 100vw;
-        margin: 4px 0px 0px 0px;
-    }
-
-    .slider {
-        overflow: hidden;
-        height: fit-content;
-        width: 100vw;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .card::-webkit-scrollbar {
-        display: none;
-    }
-
-    .card {
-        overflow-x: auto;
-        overflow-y: hidden;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
-        width: 95vw;
-        align-items: flex-start;
-        justify-content: flex-start;
-        height: 40vh;
-    }
-
-    body {
-        width: 100vw;
+        background-image: url("vista_wallpapers.jpg");
+        background-size: contain;
     }
 
     main {
         width: 100vw;
-        height: 93.6vh;
     }
 
     .home {
         overflow: hidden;
         height: 85vh;
         width: 100vw;
+        align-items: baseline;
     }
-
-    .container {
-        height: 30vh;
-        width: 50vw;
-    }
-
-    .container img {
-        height: 17vh;
-        margin: 15px;
-    }
-
-    /* .playbtn {
-        margin-bottom: 40%;
-        margin-right: 37%;
-        margin-left: 40%;
-        margin-top: 50%;
-        padding: 0;
-    } */
-
 }
 
 @media (min-width:300px)and (max-width: 450px) and (-webkit-max-device-pixel-ratio: 4) {
     .musicplayer {
         width: 100vw !important;
         display: flex;
-        justify-content: center;
-        right: auto !important;
-        bottom: 63px !important;
+        justify-content: end;
+        right: 1.5rem !important;
+        bottom: 5rem !important;
         z-index: 5;
     }
 
@@ -159,8 +73,8 @@
 
     .back0,
     .block {
-        height: 43px !important;
-        width: 370px !important;
+        height: 5rem !important;
+        width: 15rem !important;
         margin-top: 60px;
 
     }
@@ -168,7 +82,9 @@
     .back {
         display: none;
     }
-
+    .back2{
+        width: 30px !important;
+    }
     .back2,
     .back3 {
         top: -20px !important;
@@ -176,34 +92,28 @@
     }
 
     .back3 {
-        width: 26.4rem;
+        width: 9.3rem !important;
     }
 
     .disk {
-        top: -40px !important;
-        width: 68px !important;
-        height: 68px !important
-    }
-
-    .full,
-    .setting {
-        display: none;
-    }
-
-    .album {
-        display: none !important;
+        top: -35px !important;
+        width: 75px !important;
+        height: 75px !important;
+        left: 23px !important;
     }
 
     .text {
         top: 0 !important;
         height: 60px !important;
-        font-size: 8px !important;
+        font-size: 7px !important;
+        width: 15rem !important;
     }
 
     .title {
         margin-top: -11px;
-        padding-left: 35% !important;
-        width: 165px;
+        padding-left: 43% !important;
+        width: 7.5rem;
+        overflow: hidden;
     }
 
     .song-name {
@@ -214,10 +124,13 @@
 
     .artist-name {
         height: 18px;
+        width: 180px;
+        font-weight: 100;
     }
 
     .bottom {
-        top: 15px !important;
+        top: 25px !important;
+        width: 11rem !important;
     }
 
     .current-time,
@@ -226,42 +139,41 @@
     }
 
     .player {
-        top: 0px !important;
+        top: 2.5rem !important;
         justify-content: space-between !important;
+        width: 8rem !important;
+        right: .5rem;
     }
 
     .player i {
-        margin: 0px 37px 0px 8px !important;
+        margin: 0px 18px 0px 0px !important;
     }
 
-    #pre,
-    #next,
-    #addlist {
-        display: none;
+    /* lofi playlist */
+    .lofilist {
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
     }
 
-    input[type="range"]::-webkit-slider-thumb {
-        background-color: rgba(255, 0, 0, 0.829) !important;
+    #lofibackimg {
+        height: 40vh;
     }
 
-    input[type="range"]::-moz-range-thumb {
-        background-color: rgba(255, 0, 0, 0) !important;
+    .imgbanner {
+        height: 13rem;
+        width: 16rem;
+        margin-top: 1rem;
+        margin-left: 0rem;
     }
 
-    .lofipl {
-        width: 100vw;
+    .imgbanner img {
+        height: 3rem !important;
     }
 
-    table.table1 {
-        width: 40% !important;
-        padding: 15px 10px !important;
-        margin-top: -19rem;
-        margin-bottom: 10rem;
-    }
-
-    .lofiback {
-        padding: 0px 25px !important;
-
+    .lofiback h1,
+    .lofiback h2 {
+        margin-left: 0rem;
     }
 
     .lofiback h1 {
@@ -270,13 +182,26 @@
 
     .lofiback h2 {
         font-size: 15px;
+        width: 21rem;
+        height: 2.2rem;
+        overflow: hidden;
     }
 
+    .songlist {
+        position: static !important;
+        width: 21.3rem;
+        margin: auto;
+    }
 
-
-    .searchbox {
-        width: 100vw !important;
-        overflow-y: scroll;
+    .table1 {
+        right: 0rem !important;
+        margin-top: -1.4rem !important;
+        position: static !important;
+        padding: 10px 30px !important;
+        width: 92vw;
+        display: flex;
+        margin: auto;
+        margin-bottom: 5rem;
     }
 
     #table2 {
@@ -296,21 +221,84 @@
     }
 
     .goback1 {
-        top: 20px !important;
-        position: fixed;
+        position: absolute;
+        right: 20px;
+        left: auto;
+
+    }
+
+    #hometab {
+        display: none;
     }
 
     #myInput {
-        width: 66vw;
-        right: 0;
-        position: fixed;
-        margin-top: 26px;
+        width: 45vw;
     }
-    #table2 .pause{
+
+    #find {
+        top: 0px;
+        left: 6px;
+    }
+
+    #table2 .pause {
         height: 1.5rem !important;
     }
-    #yourlist,
-    #likedsong{
-        display: none;
+}
+
+@media (min-width:300px)and (max-width: 450px) and (-webkit-max-device-pixel-ratio: 4) {
+    .container1 {
+        height: 9.5rem;
+    }
+
+    .sliderimg1,
+    .sliderimg2,
+    .sliderimg3 {
+        background-size: contain;
+        height: 9.5rem;
+    }
+
+    .sliderimg1 p,
+    .sliderimg2 p,
+    .sliderimg3 p {
+        font-size: 15px;
+        margin-right: 10rem;
+        width: 100vw;
+    }
+
+    .container {
+        width: 100vw;
+        height: 30rem;
+        flex-direction: column;
+    }
+
+    .lofi,
+    .tranding {
+        height: 11rem;
+        width: 18rem;
+    }
+
+    .hometext {
+        font-size: 2rem;
+        width: 15rem;
+        margin-left: 20px;
+    }
+
+    .lofi {
+        margin-left: -5rem;
+    }
+
+    .tranding {
+        margin-right: -5rem;
+    }
+
+    .lofi h4,
+    .tranding h4 {
+        font-size: 2.3rem;
+    }
+
+    .lofiimg,
+    .trandingimg {
+        height: 8.5rem;
+        width: 9.5rem;
     }
 }

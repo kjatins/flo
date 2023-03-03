@@ -75,9 +75,7 @@ const allPlays = ()=>{
         element.classList.add('plistbtn');
     })
 }
-// const plist=()=>{
-//     Array.from(document.getElementsByClassName("card"))
-// }
+
 Array.from(document.getElementsByClassName('cardplay')).forEach((element) => {
     element.addEventListener('click', (e) => {
         allPlays();
@@ -99,7 +97,7 @@ Array.from(document.getElementsByClassName('cardplay')).forEach((element) => {
 Array.from(document.getElementsByClassName('playbtn')).forEach((element) => {
     element.addEventListener('click', (e) => {
         allPlays();
-        musicplayer.style.display = "contents";
+        musicplayer.style.display = "flex";
         index = parseInt(e.target.id);
         music.src = `songs/music/${index + 1}.mp3`;
         songname.innerHTML = songs[index].name;
