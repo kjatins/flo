@@ -350,13 +350,15 @@ main {
     filter: invert(100%) drop-shadow(0px 0px 20px #44d);
 }
 
-.lofipl {
+.lofipl,
+.lofipl1 {
     width: 100vw;
     display: none;
     overflow-y: scroll;
 }
 
-table.table1 {
+table.table1,
+table.table01 {
     background: #ffffff8a;
     border-radius: 30px;
     padding: 20px 50px;
@@ -367,17 +369,20 @@ table.table1 {
     right: 2rem;
 }
 
-.table1 td {
+.table1 td,
+.table01 td {
     padding: 20px;
 }
 
-.table1 td img {
+.table1 td img,
+.table01 td img {
     height: 4rem;
     border-radius: 5rem;
     box-shadow: 0px 3px 15px -3px black;
 }
 
-.table1 .plistbtn {
+.table1 .plistbtn,
+.table01 .plistbtn {
     height: 2rem;
     content: url('play_circle_FILL1_wght400_GRAD0_opsz48.png');
 }
@@ -386,34 +391,43 @@ table.table1 {
     cursor: pointer;
 }
 
-.lofilist {
+.lofilist,
+.lofilist1 {
     font-family: Rubik;
     position: relative;
     width: 100vw;
     height: 100vh;
 }
 
-.lofiback {
+.lofiback,
+.lofiback1 {
     width: 25rem;
     padding: 40px;
 }
-
-.imgbanner {
+.imgbanner1{
+    background-image: url('koukichi-takahashi-fZdX9BW8WDs-unsplash.jpg');
+    box-shadow: 0px 10px 47px 23px #2a1d37;
+}
+.imgbanner{
     background-image: url('1366x483-342300-Digital-Art-Lofi-Chill-Bedroom-Raccoon.jpg');
+    box-shadow: 0px 10px 47px 23px #ab5a4e;
+}
+.imgbanner,
+.imgbanner1 {
     height: 22rem;
     width: 25rem;
     background-size: cover;
     background-position: center;
     position: relative;
     border-radius: 20px;
-    box-shadow: 0px 10px 47px 23px #ab5a4e;
     filter: blur(0.5px);
     margin-top: 3rem;
     margin-left: 2rem;
     z-index: -1;
 }
 
-.imgbanner img {
+.imgbanner img,
+.imgbanner1 img {
     position: absolute;
     bottom: 15px;
     left: 15px;
@@ -421,32 +435,42 @@ table.table1 {
 
 }
 
-.lofiback h1 {
+.lofiback h1,
+.lofiback1 h1 {
     font-size: 45px;
 }
 
 .lofiback h1,
-.lofiback h2 {
+.lofiback h2 ,
+.lofiback1 h1,
+.lofiback1 h2 {
     margin-left: 2rem;
     color: whitesmoke;
     text-shadow: 1px 4px 5px #201717;
     padding-top: 20px;
 }
 
-.lofiback h2 {
+.lofiback h2 ,
+.lofiback1 h2 {
     font-weight: 300;
     font-size: 20px;
 }
-
-#lofibackimg {
+#lofibackimg1{
+    box-shadow: 0px 8rem 100rem 22rem #565557;
+}
+#lofibackimg{
+    box-shadow: 0px 8rem 100rem 22rem #9f5a51;
+}
+#lofibackimg,
+#lofibackimg1 {
     position: absolute;
     width: 100vw;
     filter: blur(15px);
     z-index: -2;
-    box-shadow: 0px 8rem 100rem 22rem #9f5a51;
 }
 
-.songlist {
+.songlist,
+.songlist1 {
     position: absolute;
     right: 2rem;
     width: 43.3rem;
@@ -463,7 +487,8 @@ table.table1 {
     padding-bottom: 35px;
 }
 
-.table1 #tname {
+.table1 #tname,
+.table01 #tname {
     font-weight: bold;
     width: 30vw;
     display: inline-block;
@@ -501,7 +526,7 @@ table.table1 {
 }
 
 table#table2 {
-    background: #241818;
+    background: #241818f5;
     border-radius: 30px;
     padding: 20px 50px;
     margin-top: 10px;

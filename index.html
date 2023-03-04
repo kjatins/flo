@@ -138,24 +138,25 @@
             </div>
         </div>
         <div class="home" id="home">
-           <div class="hometext">
-            <h2>Browse Playlists</h2>
-           </div>
-           <div class="container">
-            <div class="lofi" id="showlofi">
-                <h4>Lofi</h4>
-                <i class="lofiimg">
+            <div class="hometext">
+                <h2>Browse Playlists</h2>
+            </div>
+            <div class="container">
+                <div class="lofi" id="showlofi">
+                    <h4>Lofi</h4>
+                    <i class="lofiimg">
                         <img src="music-logo-png-2342.png" alt="">
-                </i>
+                    </i>
+                </div>
+                <div class="trending" id="showtrend">
+                    <h4>Trending</h4>
+                    <i class="trendingimg">
+                        <img src="music-logo-png-2342.png" alt="">
+                    </i>
+                </div>
             </div>
-            <div class="trending">
-                <h4>Trending</h4>
-                <i class="trendingimg">
-                    <img src="music-logo-png-2342.png" alt="">
-                </i>
-            </div>
-           </div>
         </div>
+        <!-- lofi playlist -->
         <div class="lofipl">
             <div class="lofilist">
                 <img id="lofibackimg" src="/1366x483-342300-Digital-Art-Lofi-Chill-Bedroom-Raccoon.jpg" alt="">
@@ -225,52 +226,110 @@
             </div>
         </div>
         </div>
+        <!-- close -->
+        <!-- trending playlist -->
+        <div class="lofipl1">
+            <div class="lofilist1">
+                <img id="lofibackimg1" src="/1366x483-342300-Digital-Art-Lofi-Chill-Bedroom-Raccoon.jpg" alt="">
+                <div class="lofiback1">
+                    <div class="imgbanner1">
+                        <img src="music-logo-png-2342.png" alt="">
+                    </div>
+                    <h1>Trending</h1>
+                    <h2>Music is the soundtrack of our lives, and a trending playlist is the beat that keeps us moving forward.</h2>
+                </div>
+                <div class="songlist1">
+                    <p>For This PlayList</p>
+                    <p>7 Songs</p>
+                </div>
+                <table class="table01">
+                    <tr>
+                        <td><img src="songs/img/Shaamat.jpg" alt=""></td>
+                        <td><span id="tname">Shaamat</span><br><span id="nartist">Ankit Tiwari, Tara Sutaria</span>
+                        </td>
+                        <td><span class="cardplay plistbtn" id="0"></span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="songs/img/idfc.jpg" alt=""></td>
+                        <td><span id="tname">idfc</span><br><span id="nartist">blackbear</span>
+                        </td>
+                        <td><span class="cardplay plistbtn" id="2"></span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="songs/img/bandook.jpg" alt=""></td>
+                        <td><span id="tname">Bandook</span><br><span id="nartist">Harsh Sandhu, Pranjal Dahiya</span></td>
+                        <td><span class="cardplay plistbtn" id="4"></span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="songs/img/maan mere jaan.jpg" alt=""></td>
+                        <td><span id="tname">Maan Meri Jaan</span><br><span id="nartist">King</span>
+                        </td>
+                        <td><span class="cardplay plistbtn" id="8"></span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="songs/img/Bandook Ma Goli.jpg" alt=""></td>
+                        <td><span id="tname">Bandook Ma Goli</span><br><span id="nartist">Masoom Sharma, Meenakshi Rana</span>
+                        </td>
+                        <td><span class="cardplay plistbtn" id="10"></span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="songs/img/Ram Siya Ram.jpg" alt=""></td>
+                        <td><span id="tname">Ram Siya Ram</span><br><span id="nartist">Sachet Tandon</span></td>
+                        <td><span class="cardplay plistbtn" id="12"></span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="songs/img/Maine Royaan.jpg" alt=""></td>
+                        <td><span id="tname">Maine Royaan</span><br><span id="nartist">Tanveer Evan</span></td>
+                        <td><span class="cardplay plistbtn" id="13"></span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        </div>
+        <!-- close -->
         <div class="goback1" id="masterback"><img src="icons/arrow_back_ios_FILL1_wght400_GRAD0_opsz48.png"
                 height="25px" alt=""></div>
 
-
-
-    </main>
-
-    <script src="musicplayer1/data.js"></script>
-    <audio src="" id="audio"></audio>
-    <div class="masterplayer">
-        <div class="musicplayer">
-            <div class="mpcard">
-                <div class="close"></div>
-                <div class="back0">
-                    <div class="back"></div>
-                    <div class="back1"></div>
-                    <div class="back2"></div>
-                    <div class="back3"></div>
-                </div>
-                <div class="block">
-                    <div class="songp">
-                        <img class="disk " alt="">
+        <script src="musicplayer1/data.js"></script>
+        <audio src="" id="audio"></audio>
+        <div class="masterplayer">
+            <div class="musicplayer">
+                <div class="mpcard">
+                    <div class="close"></div>
+                    <div class="back0">
+                        <div class="back"></div>
+                        <div class="back1"></div>
+                        <div class="back2"></div>
+                        <div class="back3"></div>
                     </div>
-                    <div class="text">
-                        <div class="title">
-                            <h1 id="song-name" class="song-name">song one</h1>
-                            <h2 class="artist-name">artist</h2>
+                    <div class="block">
+                        <div class="songp">
+                            <img class="disk " alt="">
                         </div>
-                    </div>
-                    <div class="bottom">
-                        <input type="range" class="seek-bar" id="progressbar" min="0" value="0" max="100">
-                        <span class="current-time">00:00</span>
-                        <span class="song-duration">00:00</span>
-                    </div>
-                    <div class="player">
-                        <i class="pre" id="pre"></i>
-                        <i class="masterplay" id="play"></i>
-                        <i class="next" id="next"></i>
+                        <div class="text">
+                            <div class="title">
+                                <h1 id="song-name" class="song-name">song one</h1>
+                                <h2 class="artist-name">artist</h2>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <input type="range" class="seek-bar" id="progressbar" min="0" value="0" max="100">
+                            <span class="current-time">00:00</span>
+                            <span class="song-duration">00:00</span>
+                        </div>
+                        <div class="player">
+                            <i class="pre" id="pre"></i>
+                            <i class="masterplay" id="play"></i>
+                            <i class="next" id="next"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="musicplayer1/app.js"></script>
-    <script src="script.js"></script>
+        <script src="musicplayer1/app.js"></script>
+        <script src="script.js"></script>
+    </main>
 </body>
 
 </html>

@@ -38,7 +38,6 @@
     body {
         height: -webkit-fill-available;
         height: auto;
-        overflow: hidden;
         width: 100vw;
         background-image: url("vista_wallpapers.jpg");
         background-size: contain;
@@ -209,7 +208,8 @@
         padding: 20px 25px !important;
         font-size: 15px;
         margin-bottom: 15rem;
-        margin-top: 5rem !important;
+        margin-top: 2rem !important;
+        right: 1rem !important;
     }
 
     #table2 td img {
@@ -233,11 +233,12 @@
 
     #myInput {
         width: 45vw;
+        margin: 0px !important;
     }
 
-    #find {
-        top: 0px;
-        left: 6px;
+    .find {
+        top: 0px !important;
+        left: 7px !important;
     }
 
     #table2 .pause {
@@ -247,30 +248,30 @@
 
 @media (min-width:300px)and (max-width: 450px) and (-webkit-max-device-pixel-ratio: 4) {
     .container1 {
-        height: 9rem;
-        margin-top: 3px;
+        height: fit-content;
     }
 
     .sliderimg1,
     .sliderimg2,
     .sliderimg3 {
-        background-size: contain;
-        height: 10.5rem;
+        background-size: cover;
+        height: 14rem;
     }
 
     .sliderimg1 p,
     .sliderimg2 p,
     .sliderimg3 p {
         font-size: 15px;
-        margin-right: 10rem;
+        margin-right: 5rem;
         width: 100vw;
         -webkit-text-stroke: 0.2px black;
     }
 
     .container {
-        width: 100vw;
+        width: 90vw;
         height: 30rem;
         flex-direction: column;
+        margin: 0px auto;
     }
 
     .lofi,

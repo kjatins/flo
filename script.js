@@ -17,6 +17,7 @@ masterback.addEventListener('click', () => {
   document.querySelector(".container1").style.display = "";
   document.querySelector('#masterback').style.display = "none";
   document.querySelector(".lofipl").style.display = "none";
+  document.querySelector(".lofipl1").style.display = "none";
 
 })
 let showlofi = document.getElementById('showlofi');
@@ -24,6 +25,16 @@ showlofi.addEventListener('click', () => {
   document.querySelector(".home").style.display = "none";
   document.querySelector(".container1").style.display = "none";
   document.querySelector(".lofipl").style.display = "flex";
+  document.querySelector(".lofipl1").style.display = "none";
+  document.querySelector('#masterback').style.display = "flex";
+})
+
+let showtrend = document.getElementById('showtrend');
+showtrend.addEventListener('click', () => {
+  document.querySelector(".home").style.display = "none";
+  document.querySelector(".container1").style.display = "none";
+  document.querySelector(".lofipl1").style.display = "flex";
+  document.querySelector(".lofipl").style.display = "none";
   document.querySelector('#masterback').style.display = "flex";
 })
 
