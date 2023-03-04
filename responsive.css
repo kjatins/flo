@@ -148,51 +148,61 @@
         margin: 0px 18px 0px 0px !important;
     }
 
-    /* lofi playlist */
-    .lofilist {
+    /* lofi and trending playlist */
+    .lofilist,
+    .lofilist1 {
         display: flex;
         flex-direction: column;
         overflow: scroll;
     }
 
-    #lofibackimg {
+    #lofibackimg,
+    #lofibackimg1 {
         height: 40vh;
     }
 
-    .imgbanner {
+    .imgbanner,
+    .imgbanner1 {
         height: 13rem;
         width: 16rem;
         margin-top: 1rem;
         margin-left: 0rem;
     }
 
-    .imgbanner img {
+    .imgbanner img,
+    .imgbanner1 img {
         height: 3rem !important;
     }
 
     .lofiback h1,
-    .lofiback h2 {
+    .lofiback h2,
+    .lofiback1 h1,
+    .lofiback1 h2  {
         margin-left: 0rem;
     }
 
-    .lofiback h1 {
+    .lofiback h1,
+    .lofiback1 h1 {
         font-size: 35px;
     }
 
-    .lofiback h2 {
+    .lofiback h2,
+    .lofiback1 h2 {
         font-size: 15px;
         width: 21rem;
         height: 2.2rem;
         overflow: hidden;
     }
 
-    .songlist {
+    .songlist,
+    .songlist1 {
         position: static !important;
         width: 21.3rem;
         margin: auto;
     }
 
-    .table1 {
+    .table1,
+    .table01 {
         right: 0rem !important;
         margin-top: -1.4rem !important;
         position: static !important;
