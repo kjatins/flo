@@ -247,14 +247,15 @@
 
 @media (min-width:300px)and (max-width: 450px) and (-webkit-max-device-pixel-ratio: 4) {
     .container1 {
-        height: 9.5rem;
+        height: 9rem;
+        margin-top: 3px;
     }
 
     .sliderimg1,
     .sliderimg2,
     .sliderimg3 {
         background-size: contain;
-        height: 9.5rem;
+        height: 10.5rem;
     }
 
     .sliderimg1 p,
@@ -263,6 +264,7 @@
         font-size: 15px;
         margin-right: 10rem;
         width: 100vw;
+        -webkit-text-stroke: 0.2px black;
     }
 
     .container {
