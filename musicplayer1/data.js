@@ -3,7 +3,7 @@ let songs=[
         name:'Shaamat',
         path:'songs/music/1.mp3',
         artist:'Ankit Tiwari, Tara Sutaria',
-        cover:'songs/img/Shaamat.jpg',
+        cover:'songs/img/shaamat.jpg',
         album:'latest'
     },
     {
