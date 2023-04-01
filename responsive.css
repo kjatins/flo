@@ -81,9 +81,11 @@
     .back {
         display: none;
     }
-    .back2{
+
+    .back2 {
         width: 30px !important;
     }
+
     .back2,
     .back3 {
         top: -20px !important;
@@ -177,7 +179,7 @@
     .lofiback h1,
     .lofiback h2,
     .lofiback1 h1,
-    .lofiback1 h2  {
+    .lofiback1 h2 {
         margin-left: 0rem;
     }
 
@@ -266,6 +268,9 @@
     .sliderimg3 {
         background-size: cover;
         height: 14rem;
+        margin: 10px 10px 10px 0px;
+        border-radius: 20px;
+        box-shadow: 0px 3px 12px 0px #000000bf;
     }
 
     .sliderimg1 p,
@@ -313,5 +318,9 @@
     .trendingimg {
         height: 8.5rem;
         width: 9.5rem;
+    }
+    .close{
+        left: -3px !important;
+        top: 10px !important;
     }
 }

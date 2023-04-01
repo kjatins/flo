@@ -9,6 +9,7 @@ body {
     background-image: url("vista_wallpapers\ \(1\).jpg");
     background-size: cover;
     backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
     width: 100vw;
     flex-direction: column;
 
@@ -114,9 +115,11 @@ body {
     flex-direction: row;
     z-index: 9;
 }
-#hometab{
+
+#hometab {
     cursor: pointer;
 }
+
 .im1 {
     filter: invert(100%);
     height: 30px;
@@ -288,8 +291,9 @@ main {
     box-shadow: 0px 5px 15px -3px rgb(40, 9, 9);
     cursor: pointer;
 }
+
 .lofi:hover,
-.trending:hover{
+.trending:hover {
     transform: translateY(-4px);
 }
 
@@ -404,14 +408,17 @@ table.table01 {
     width: 25rem;
     padding: 40px;
 }
-.imgbanner1{
+
+.imgbanner1 {
     background-image: url('koukichi-takahashi-fZdX9BW8WDs-unsplash.jpg');
     box-shadow: 0px 10px 47px 23px #2a1d37;
 }
-.imgbanner{
+
+.imgbanner {
     background-image: url('1366x483-342300-Digital-Art-Lofi-Chill-Bedroom-Raccoon.jpg');
     box-shadow: 0px 10px 47px 23px #ab5a4e;
 }
+
 .imgbanner,
 .imgbanner1 {
     height: 22rem;
@@ -441,7 +448,7 @@ table.table01 {
 }
 
 .lofiback h1,
-.lofiback h2 ,
+.lofiback h2,
 .lofiback1 h1,
 .lofiback1 h2 {
     margin-left: 2rem;
@@ -450,17 +457,20 @@ table.table01 {
     padding-top: 20px;
 }
 
-.lofiback h2 ,
+.lofiback h2,
 .lofiback1 h2 {
     font-weight: 300;
     font-size: 20px;
 }
-#lofibackimg1{
+
+#lofibackimg1 {
     box-shadow: 0px 8rem 100rem 22rem #565557;
 }
-#lofibackimg{
+
+#lofibackimg {
     box-shadow: 0px 8rem 100rem 22rem #9f5a51;
 }
+
 #lofibackimg,
 #lofibackimg1 {
     position: absolute;
@@ -566,4 +576,20 @@ table#table2 {
     height: 2rem;
     filter: invert(1);
     content: url('play_circle_FILL1_wght400_GRAD0_opsz48.png');
+}
+
+
+
+/* closebtn */
+.close {
+    background-image: url('icons/arrow_back_ios_FILL1_wght400_GRAD0_opsz48.png');
+    height: 22px;
+    width: 11px;
+    position: absolute;
+    rotate: -90deg;
+    left: -4px;
+    top: 6.5rem;
+    background-size: contain;
+    margin: 20px 20px 20px 20px;
+    cursor: pointer;
 }

@@ -15,6 +15,14 @@ let currentTime = document.querySelector(".current-time");
 let songDuration = document.querySelector(".song-duration");
 let musicplayer = document.querySelector(".masterplayer");
 
+
+let closePlayer = document.querySelector('.close');
+
+closePlayer.addEventListener('click', () => {
+  document.querySelector(".masterplayer").style.display = "none";
+  music.pause();
+})
+
 //songitems;
 
 
@@ -150,27 +158,27 @@ progressbar.addEventListener('change', () => {
 
 
 
-function funcall() {
-    let albumlofi = songs.filter(b => b.album == 'latest');
-    let list = "<table border='1|1'>"
-    console.table(albumlofi)
-    setTimeout(() => {
-        list += '<thead>'
-        list += '<tr>';
-        list += '<td>'+"Title"+'</td>';
-        list += '<td>'+"Artist"+'</td>';
-        list += '<td>'+"cover"+'</td>';
-        list += '</tr>';
-        list += '</thead>';
-        for (var i = 0; i < albumlofi.length; i++) {
-            list += '<tr>';
-            list += '<td>'+albumlofi[i].name+'</td>';
-            list += '<td>'+albumlofi[i].artist+'</td>';
-            list += '<td>'+albumlofi[i].cover+'</td>';
-            list += '</tr>';
-        }
+// function funcall() {
+//     let albumlofi = songs.filter(b => b.album == 'latest');
+//     let list = "<table border='1|1'>"
+//     console.table(albumlofi)
+//     setTimeout(() => {
+//         list += '<thead>'
+//         list += '<tr>';
+//         list += '<td>'+"Title"+'</td>';
+//         list += '<td>'+"Artist"+'</td>';
+//         list += '<td>'+"cover"+'</td>';
+//         list += '</tr>';
+//         list += '</thead>';
+//         for (var i = 0; i < albumlofi.length; i++) {
+//             list += '<tr>';
+//             list += '<td>'+albumlofi[i].name+'</td>';
+//             list += '<td>'+albumlofi[i].artist+'</td>';
+//             list += '<td>'+albumlofi[i].cover+'</td>';
+//             list += '</tr>';
+//         }
          
-        console.log(list)
-    },500);
-}
-funcall();
+//         console.log(list)
+//     },500);
+// }
+// funcall();

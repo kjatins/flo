@@ -104,4 +104,110 @@ let songs=[
         cover:'songs/img/Saibo - Lofi Flip.jpg',
         album:'lofi'
     },
+    // new songs
+    {
+        name:'Parindey',
+        path:'songs/music/16.mp3',
+        artist:'Suresh Kumar Vishnoi',
+        cover:'songs/img/parindey.jpg',
+        album:'lofi'
+    },
+    {
+        name:'Yaaran Gail',
+        path:'songs/music/17.mp3',
+        artist:'BILLA SONIPAT ALA',
+        cover:'songs/img/yaaranGail.jpg',
+        album:'latest'
+    },
+    {
+        name:'Jimikki Ponnu',
+        path:'songs/music/18.mp3',
+        artist:'Rayeez',
+        cover:'songs/img/jimikki.jpg',
+        album:'latest'
+    },
+    {
+        name:'DESIRES',
+        path:'songs/music/19.mp3',
+        artist:'AP DHILLON',
+        cover:'songs/img/desires.jpg',
+        album:'lofi'
+    },
+    {
+        name:'Bones',
+        path:'songs/music/20.mp3',
+        artist:'Imagine Dragons',
+        cover:'songs/img/bones.jpg',
+        album:'latest'
+    },
+    {
+        name:'EK DIN PYAAR',
+        path:'songs/music/21.mp3',
+        artist:'MC STΔN',
+        cover:'songs/img/ekdinpyaar.jpg',
+        album:'latest'
+    },
+    {
+        name:'DAKU',
+        path:'songs/music/22.mp3',
+        artist:'INDERPAL MOGA',
+        cover:'songs/img/daku.jpg',
+        album:'latest'
+    },
+    {
+        name:'Safar (Lo-Fi)',
+        path:'songs/music/23.mp3',
+        artist:'Juss',
+        cover:'songs/img/safarlofi.jpg',
+        album:'lofi'
+    },
+    {
+        name:'Akhiyaan',
+        path:'songs/music/24.mp3',
+        artist:'MITRAZ',
+        cover:'songs/img/akhiyaan.jpg',
+        album:'lofi'
+    },
+    {
+        name:'Naatu Naatu Song (Telugu)',
+        path:'songs/music/25.mp3',
+        artist:'SS Rajamouli',
+        cover:'songs/img/natunatu.jpg',
+        album:'latest'
+    },
+    {
+        name:'2 Numbri',
+        path:'songs/music/26.mp3',
+        artist:'Suresh Kumar Vishnoi',
+        cover:'songs/img/2numbarilofi.jpg',
+        album:'lofi'
+    },
+    {
+        name:'MUCHA AALE TAG',
+        path:'songs/music/27.mp3',
+        artist:'Khasa Aala Chahar',
+        cover:'songs/img/ontheway.jpg',
+        album:'latest'
+    },
+    {
+        name:'Spirits x Duniya',
+        path:'songs/music/28.mp3',
+        artist:'Vivek Creates',
+        cover:'songs/img/spiritsXduniya.jpg',
+        album:'lofi'
+    },
+    {
+        name:'Night Changes',
+        path:'songs/music/29.mp3',
+        artist:'One Direction',
+        cover:'songs/img/nightchanges.jpg',
+        album:'latest'
+    },
+    {
+        name:'Khaar',
+        path:'songs/music/30.mp3',
+        artist:'JP Atwal',
+        cover:'songs/img/khaar.jpg',
+        album:'latest'
+    }
 ]
