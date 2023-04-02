@@ -598,7 +598,7 @@ table#table2 {
 
 /* message */
 .button1 {
-    background-image: url("icons/sms.jpg");
+    background-image: url('icons/sms.jpg');
     background-size: contain;
     height: 3rem;
     width: 3rem;
