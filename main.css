@@ -581,16 +581,31 @@ table#table2 {
 
 
 /* closebtn */
-#close{
+#close {
     position: absolute;
-left: 3px;
-top: -16px;
-padding: 10px;
-cursor: pointer;
+    left: 3px;
+    top: -16px;
+    padding: 10px;
+    cursor: pointer;
 }
-#close img{
+
+#close img {
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
-height: 25px;
+    height: 25px;
+}
+
+/* message */
+.button1 {
+    background-image: url(/icons/sms.jpg);
+    background-size: contain;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    cursor: pointer;
+    margin: 3rem;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 8px 7px 15px 5px #481616bf, -8px -7px 15px 5px #b0b0b0;
 }

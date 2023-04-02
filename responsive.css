@@ -326,4 +326,8 @@
     #close img{
         height: 20px !important;
     }
+    .button1{
+        margin: 2rem !important;
+        bottom: 2rem !important;
+    }
 }
