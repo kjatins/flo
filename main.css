@@ -581,15 +581,16 @@ table#table2 {
 
 
 /* closebtn */
-.close {
-    background-image: url('icons/arrow_back_ios_FILL1_wght400_GRAD0_opsz48.png');
-    height: 22px;
-    width: 11px;
+#close{
     position: absolute;
-    rotate: -90deg;
-    left: -4px;
-    top: 6.5rem;
-    background-size: contain;
-    margin: 20px 20px 20px 20px;
-    cursor: pointer;
+left: 3px;
+top: -16px;
+padding: 10px;
+cursor: pointer;
+}
+#close img{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+height: 25px;
 }

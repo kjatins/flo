@@ -16,7 +16,7 @@ let songDuration = document.querySelector(".song-duration");
 let musicplayer = document.querySelector(".masterplayer");
 
 
-let closePlayer = document.querySelector('.close');
+let closePlayer = document.getElementById('close');
 
 closePlayer.addEventListener('click', () => {
   document.querySelector(".masterplayer").style.display = "none";
@@ -60,7 +60,7 @@ back.addEventListener('click', () => {
 })
 
 next.addEventListener('click', () => {
-    if (index >= 14) {
+    if (index >= 29) {
         index = 0;
     }
     else {

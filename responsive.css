@@ -319,8 +319,11 @@
         height: 8.5rem;
         width: 9.5rem;
     }
-    .close{
-        left: -3px !important;
-        top: 10px !important;
+    #close{
+        left: 6px !important;
+        top: 23px !important;
+    }
+    #close img{
+        height: 20px !important;
     }
 }
